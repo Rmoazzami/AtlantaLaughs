@@ -1,32 +1,38 @@
 import React from 'react';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Nav from './components/Nav';
+import About from './components/About';
+import Comics from './components/Comics';
+import Request from './components/Request';
+import Service from './components/Service';
+
+
 import { render } from "react-dom";
- import './App.css';
+ import './css/App.css';
 
 import Tabs from './Tabs';
-require('./styles.css');
+require('./css/styles.css');
 
 
 function App() {
   return (
-    <div>
-      <h1>Tabs Demo</h1>
-      <Tabs>
-        <div label = "Gator">
-          See ya later, <em>Alligator</em>!
-        </div>
-        <div label="Crocs">
-          After 'while, <em>Crocidle</em>!
-        </div>
-        <div label="Sarcosuchus">
-          Nothing to see here, this tab is <em>extinct</em>!
-        </div>
-      </Tabs>
-    </div>
+      <Router>
+          <div className ="App">
+              <Nav />
+              <Switch>
+                  <Route exact = {true} path = '/' component={About}/>
+                  <Route path = '/Comics' component={Comics}/>
+                  <Route path = '/Request' component={Request}/>
+                  <Route path = '/Service' component={Service}/>
+
+              </Switch>
+
+          </div>
+      </Router>
+
   );
 }
 
-const container = document.createElement('div');
-document.body.appendChild(container);
-render(<App />, container);
+
 
 export default App;
