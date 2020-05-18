@@ -3,14 +3,26 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(73, 79, 82);
-  color: white;
+  /*background: rgb(73, 79, 82);*/
+  color: rgb(73, 79, 82);
 }
 
 .nav-links{
+
+  /*text-decoration: none;*/
   width: 50%;
   display: flex;
   justify-content: space-around;
   align-items:center;
   list-style: none;
+}
+.nav-style{
+  /*better font and keep it consistent*/
+  font-family: "Arial";
+  color: rgb(73, 79, 82);
+  text-decoration: none;
+}
+
+.nav-style:hover{
+  text-decoration:underline;
 }

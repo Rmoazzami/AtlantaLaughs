@@ -1,10 +1,13 @@
 import React from 'react';
-import '../css/App.css';
+import '../css/About.css';
 
 function About() {
   return (
-    <div >
-      <h1>about</h1>
+    <div>
+      <h1>About</h1>
+        <p1>What we do:</p1>
+
+
     </div>
   );
 }

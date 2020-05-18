@@ -3,27 +3,27 @@ import {Link} from 'react-router-dom';
 import '../css/Nav.css';
 
 function Nav() {
-    const navStyle = {
-        color: 'black'
-    };
+
   return (
-    <nav>
-        <h3>Logo</h3>
-        <ul className="nav-links">
-            <Link style = {navStyle} to ='/'>
-                <li>About</li>
-            </Link>
-            <Link style = {navStyle} to='/comics'>
-                <li>Comics</li>
-            </Link>
-            <Link style = {navStyle} to='/request'>
-                <li>Request</li>
-            </Link>
-            <Link style = {navStyle} to='/service'>
-                <li>Service</li>
-            </Link>
-        </ul>
-    </nav>
+      <div>
+          <h3>Logo</h3>
+            <nav>
+                <ul className="nav-links">
+                    <Link className = "nav-style" to ='/'>
+                        <li>About</li>
+                    </Link>
+                    <Link className = "nav-style" to='/comics'>
+                        <li>Comics</li>
+                    </Link>
+                    <Link className = "nav-style" to='/request'>
+                        <li>Request</li>
+                    </Link>
+                    <Link className = "nav-style" to='/service'>
+                        <li>Service</li>
+                    </Link>
+                </ul>
+            </nav>
+          </div>
   );
 }
 
