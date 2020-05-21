@@ -11,4 +11,14 @@
     width:100%;
     max-width: 100px;
     height: auto;
+    float: bottom;
+}
+
+.wrapper {
+    float:bottom;
+}
+.col-sm {
+
+    float: right;
+    font-size: 10px;
 }

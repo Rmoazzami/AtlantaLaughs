@@ -17,12 +17,13 @@ function Footer() {
                     {/*    </ul>*/}
                     {/*</div>*/}
 
-                    {/*<div className="row">*/}
-                    {/*    <p>Logo</p>*/}
-                    {/*    <p className ='col-sm'>*/}
-                    {/*        &copy;{new Date().getFullYear()} Thicc memes in | All rights reserved | Terms of service | Privacy*/}
-                    {/*    </p>*/}
-                    {/*</div>*/}
+
+                    <div className="wrapper">
+                        <p className ='col-sm'>
+                            &copy;{new Date().getFullYear()} Atlanta Laughs LLC | ALL RIGHTS RESERVED
+                        </p>
+                    </div>
+
                 </div>
             </div>
 
