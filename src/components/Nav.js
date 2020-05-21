@@ -6,7 +6,7 @@ function Nav() {
 
   return (
       <div>
-          <h3>Logo</h3>
+          <img className = "logo-style" src="./logo192.png"  />
             <nav>
                 <ul className="nav-links">
                     <Link className = "nav-style" to ='/'>
@@ -19,7 +19,7 @@ function Nav() {
                         <li>Request</li>
                     </Link>
                     <Link className = "nav-style" to='/service'>
-                        <li>Service</li>
+                        <li>The List</li>
                     </Link>
                 </ul>
             </nav>

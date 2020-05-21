@@ -5,6 +5,7 @@ import About from './components/About';
 import Comics from './components/Comics';
 import Request from './components/Request';
 import Service from './components/Service';
+import Footer from './components/Footer';
 
 
 import { render } from "react-dom";
@@ -16,19 +17,22 @@ require('./css/styles.css');
 
 function App() {
   return (
-      <Router>
-          <div className ="App">
-              <Nav />
-              <Switch>
-                  <Route exact = {true} path = '/' component={About}/>
-                  <Route path = '/Comics' component={Comics}/>
-                  <Route path = '/Request' component={Request}/>
-                  <Route path = '/Service' component={Service}/>
+      <div className = 'page-container'>
+          <Router>
+              <div className ="App">
+                  <Nav />
+                  <Switch>
+                      <Route exact = {true} path = '/' component={About}/>
+                      <Route path = '/Comics' component={Comics}/>
+                      <Route path = '/Request' component={Request}/>
+                      <Route path = '/Service' component={Service}/>
 
-              </Switch>
+                  </Switch>
 
-          </div>
-      </Router>
+              </div>
+          </Router>
+          <Footer/>
+      </div>
 
   );
 }
