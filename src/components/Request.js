@@ -1,11 +1,17 @@
 import React from 'react';
-import '../css/App.css';
+import '../css/Request.css';
 
 function Request() {
   return (
     <div >
-      <h1>Request</h1>
-        <p> Description of who to email, and what to email</p>
+      <div className="image">
+            <img className="img-style" src="./IMG_4133.jpeg"  />
+            <h1>Request</h1>
+        </div>
+        <div className= "desc">
+            <h2>Get Your Show on The List</h2>
+            <p1>Instructions on how to req your show on our list</p1>
+        </div>
     </div>
   );
 }
